@@ -10,11 +10,13 @@ class Screen0 extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
               color: Colors.red,
               child: Text('Go To Screen 1'),
               onPressed: () {
+                Navigator.pushNamed(context, '/screen1');
                 //Navigate to Screen 1
               },
             ),
@@ -22,6 +24,7 @@ class Screen0 extends StatelessWidget {
               color: Colors.blue,
               child: Text('Go To Screen 2'),
               onPressed: () {
+                Navigator.pushNamed(context, '/screen2');
                 //Navigate to Screen 2
               },
             ),
